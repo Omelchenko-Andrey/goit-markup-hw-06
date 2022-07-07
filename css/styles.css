@@ -264,7 +264,7 @@ border: 1px solid #ECECEC;
 }
 
    
-.hero-button{
+.hero-button, .btn{
     background-color: var(--accent-color);
     color: var(--white-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -536,7 +536,7 @@ border: 1px solid #ECECEC;
     margin-top: 9px;
 }
 
-.footer-join{
+.footer-title{
     font-family: var(--primary-font-family);
     font-style: normal;
     font-weight: 700;
@@ -592,6 +592,39 @@ border: 1px solid #ECECEC;
     display: flex;
     align-items: baseline;
     
+}
+
+
+.footer-subscribe{
+margin-left: 93px;
+}
+
+.footer-subscribe-form{
+    display: flex;
+    align-items: center;
+    flex-direction: row
+    
+}
+
+.btn-subscribe{
+    margin-left: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-subscribe-form input{
+    padding-left: 16px ;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: #2F303A;
+    width: 358px;
+    height: 50px;
+}
+
+.footer-subscribe-icon{
+    fill: var(--white-color);
+    margin-left: 10px;
 }
 
 
@@ -730,7 +763,10 @@ border: 1px solid #ECECEC;
 
 
 
-/* Modal window */
+
+/* ------------------------------------------------- */
+/* --------------------Modal Window----------------- */
+/* ------------------------------------------------- */
 .backdrop{
     position: fixed;
     top: 0;
@@ -786,5 +822,133 @@ border: 1px solid #ECECEC;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0px;
     cursor: pointer;
+    }
+
+    .modal-close-btn:hover .icon-close-btn{
+        fill: var(--accent-color);
+    }
+
+
+.modal-form{
+    width: 100%;
+    max-width: 528px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+}
+
+.form-strong{
+    display: block;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
     
+}
+
+.form-field {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+ 
+
+}
+
+.form-field input {
+    margin: 0;
+    padding: 12px 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+
+.form-field .comment::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+    padding: 12px, 16px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+}
+
+
+.form-field textarea {
+    margin: 0;
+    padding: 12px 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+}
+
+    
+
+.form-field label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    margin-bottom: 4px;
+}
+
+.form-field-policy{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+
+}
+    
+.comment {
+    padding: 16px;
+    outline-color: var(--accent-color);
+    cursor: pointer;
+}
+      
+
+.policy-label{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    padding-left: 7px;
+    
+}
+
+.agreement{
+    color: var(--accent-color);
+}
+
+.form-input{
+    
+    width: 100%;
+    height: 40px;
+    max-width: 448px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 12px 42px;
+    outline-color: var(--accent-color);
+    cursor: pointer;
+   
+
+}
+
+
+.form-input:focus + .label-icon   {
+    fill: var(--accent-color);
+  }
+ 
+
+
+.label-icon{
+    position: absolute;
+    top: 30px;
+    left: 15px;
+}  
+
+.btn-send{
+    margin: 30px 164px 0px 164px;
 }
