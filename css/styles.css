@@ -615,14 +615,23 @@ margin-left: 93px;
 }
 
 .footer-subscribe-form input{
+    color: var(--white-color);
     padding-left: 16px ;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
+    outline: none;
     background-color: #2F303A;
     width: 358px;
     height: 50px;
+    cursor: pointer;
+    transition: border var(--transition-time-cubic);
+
 }
+
+.footer-mail-input:focus {
+    border: 1px solid var(--accent-color);
+ }
 
 .footer-subscribe-icon{
     fill: var(--white-color);
@@ -630,15 +639,6 @@ margin-left: 93px;
 }
 
 
-.footer-mail-input {
-    color: var(--white-color);
-    cursor: pointer;
-}
-
-.footer-mail-input:focus {
-    outline: 1px solid var(--accent-color);
-    outline-offset: -1px;
-}
 
 
 /* ------------------------------------------------- */
@@ -858,13 +858,10 @@ margin-left: 93px;
     color: #212121;   
 }
 
-
 .contact-form-wrapper{
     display: flex;
     flex-direction: column;
 }
-
-
 
 .form-input {
     margin: 0;
@@ -874,12 +871,11 @@ margin-left: 93px;
     max-width: 448px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    outline: 1px solid #757575;
-    outline-offset: -1px;
+    outline: none;
     cursor: pointer;
     margin-top: 4px;
     margin-bottom: 10px;
-    transition: outline var(--transition-time-cubic);
+    transition: border var(--transition-time-cubic);
 
 }
 
@@ -888,9 +884,8 @@ margin-left: 93px;
   }
 
   .form-input:focus{
-    outline: 1px solid #2196F3;
+    border: 1px solid #2196F3;
   }
-
 
 .comment {
     margin: 0;
@@ -898,17 +893,14 @@ margin-left: 93px;
     padding: 12px 16px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    outline: 1px solid #757575;
-    outline-offset: -1px;
+    outline: none;
     resize: none;
     cursor: pointer;
     max-width: 448px;
     height: 120px;
-    transition: outline var(--transition-time-cubic);
+    transition: border var(--transition-time-cubic);
 }
       
-
-
 .comment::placeholder {
     color: rgba(117, 117, 117, 0.5);
     padding: 12px, 16px;
@@ -918,8 +910,8 @@ margin-left: 93px;
     letter-spacing: 0.01em;
 }
 
-.comment:focus{
-    outline: 1px solid #2196F3;
+.comment:focus {
+    border: 1px solid #2196F3;
   }
  
 
@@ -939,11 +931,7 @@ margin-left: 93px;
     align-items: center;
     margin-top: 20px;
     margin-bottom: 30px;
-
 }
-
-
-
 
 .form-checkbox-agreement{
     font-weight: 400;
@@ -952,7 +940,6 @@ margin-left: 93px;
     letter-spacing: 0.03em;
     padding-left: 7px;
     user-select: none;
-    
 }
 
 .form-checkbox-icon{
